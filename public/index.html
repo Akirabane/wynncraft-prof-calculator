@@ -2,93 +2,141 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculateur de Professions — Wynncraft</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0c0e10">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Calculateur de professions de récolte Wynncraft — bûcheronnage, minage, agriculture, pêche. Combien de ressources récolter par niveau.">
+<title>Professions Wynncraft — Calculateur de récolte</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c0e10'/%3E%3Cpath d='M9 22l9-9M17 8l7 7-2 2-7-7z' stroke='%235fe3a1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="app">
-  <header>
-    <h1>⛏️ Calculateur de Professions <span>Wynncraft</span></h1>
-    <p class="sub">Combien de ressources récolter pour chaque niveau — bûcheronnage, minage, agriculture, pêche.</p>
+<div class="aurora" aria-hidden="true"></div>
+
+<main class="shell">
+
+  <header class="masthead">
+    <div class="wordmark">
+      <span class="wordmark__glyph" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19l8-8"/><path d="M13 5l6 6-1.8 1.8-6-6z"/><path d="M11.2 6.8L6 12"/></svg>
+      </span>
+      <span class="wordmark__text">Professions <b>Wynncraft</b></span>
+    </div>
+    <h1 class="masthead__title">Planifie ta récolte au node près.</h1>
+    <p class="masthead__sub">Combien de ressources récolter pour chaque niveau, sur tes quatre métiers : bûcheronnage, minage, agriculture, pêche.</p>
   </header>
 
-  <!-- Bloc joueur / API -->
-  <section class="card">
-    <div class="row">
-      <div class="field grow">
-        <label>Pseudo Wynncraft</label>
-        <input id="username" type="text" placeholder="ex: ton_pseudo" autocomplete="off">
+  <!-- Étape 1 — Joueur -->
+  <section class="panel" aria-labelledby="s-player">
+    <div class="panel__head">
+      <h2 id="s-player" class="panel__title">Ton personnage</h2>
+    </div>
+
+    <div class="field-row">
+      <div class="field field--grow">
+        <label for="username">Pseudo Wynncraft</label>
+        <input id="username" type="text" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="ex : Akirabane">
       </div>
-      <button id="fetchBtn" class="primary">Charger via l'API</button>
+      <button id="fetchBtn" class="btn btn--primary" type="button">
+        <span class="btn__label">Charger via l'API</span>
+        <span class="btn__spinner" aria-hidden="true"></span>
+      </button>
     </div>
-    <div id="charPick" class="hidden">
-      <label>Personnage</label>
-      <select id="charSelect"></select>
+
+    <div id="charPick" class="field char-pick hidden">
+      <label for="charSelect">Personnage</label>
+      <div class="select">
+        <select id="charSelect"></select>
+        <svg class="select__chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
     </div>
-    <p id="apiMsg" class="msg"></p>
+
+    <p id="apiMsg" class="msg" role="status" aria-live="polite"></p>
   </section>
 
-  <!-- Vue d'ensemble des 4 métiers de récolte du personnage -->
-  <section id="overview" class="card hidden">
-    <h2 id="overviewTitle">Métiers de récolte</h2>
-    <div id="overviewGrid" class="prof-grid"></div>
-    <p class="msg" style="margin-top:10px">Clique sur un métier pour le calculer en détail ci-dessous.</p>
+  <!-- Étape 2 — Vue d'ensemble des 4 métiers -->
+  <section id="overview" class="panel hidden" aria-labelledby="overviewTitle">
+    <div class="panel__head">
+      <h2 id="overviewTitle" class="panel__title">Métiers de récolte</h2>
+    </div>
+    <div id="overviewGrid" class="tiles"></div>
+    <p class="hint">Touche un métier pour le calculer en détail ci-dessous.</p>
   </section>
 
-  <!-- Paramètres de calcul -->
-  <section class="card">
+  <!-- Étape 3 — Paramètres -->
+  <section class="panel" aria-labelledby="s-params">
+    <div class="panel__head">
+      <h2 id="s-params" class="panel__title">Paramètres de calcul</h2>
+    </div>
+
     <div class="grid">
       <div class="field">
-        <label>Profession</label>
-        <select id="profSelect"></select>
+        <label for="profSelect">Profession</label>
+        <div class="select">
+          <select id="profSelect"></select>
+          <svg class="select__chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
       </div>
       <div class="field">
-        <label>Niveau actuel</label>
-        <input id="curLevel" type="number" min="1" max="132" value="1">
+        <label for="curLevel">Niveau actuel</label>
+        <input id="curLevel" type="number" inputmode="numeric" min="1" max="132" value="1">
       </div>
       <div class="field">
-        <label>% du niveau déjà fait</label>
-        <input id="curPct" type="number" min="0" max="99.9" step="0.1" value="0">
+        <label for="curPct">% du niveau déjà fait</label>
+        <input id="curPct" type="number" inputmode="decimal" min="0" max="99.9" step="0.1" value="0">
       </div>
       <div class="field">
-        <label>Niveau cible</label>
-        <input id="targetLevel" type="number" min="2" max="132" value="132">
+        <label for="targetLevel">Niveau cible</label>
+        <input id="targetLevel" type="number" inputmode="numeric" min="2" max="132" value="132">
       </div>
       <div class="field">
-        <label>Bonus XP total (%) <span class="hint" title="Cumul armure + items + passifs">ⓘ</span></label>
-        <input id="bonus" type="number" min="0" max="500" step="1" value="0">
+        <label for="bonus">Bonus XP total <span class="unit">%</span></label>
+        <input id="bonus" type="number" inputmode="numeric" min="0" max="500" step="1" value="0">
       </div>
       <div class="field">
-        <label>Estimation XP/node</label>
-        <select id="mode">
-          <option value="avg">Moyenne (recommandé)</option>
-          <option value="min">Pessimiste (min)</option>
-          <option value="max">Optimiste (max)</option>
-        </select>
+        <label for="mode">Estimation XP / node</label>
+        <div class="select">
+          <select id="mode">
+            <option value="avg">Moyenne (recommandé)</option>
+            <option value="min">Pessimiste</option>
+            <option value="max">Optimiste</option>
+          </select>
+          <svg class="select__chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
       </div>
     </div>
-    <div class="row actions">
-      <button id="calcBtn" class="primary">Calculer</button>
-      <button id="saveBtn" class="ghost">💾 Sauvegarder ce point</button>
-      <span id="saveMsg" class="msg inline"></span>
+
+    <div class="actions">
+      <button id="calcBtn" class="btn btn--primary" type="button">Calculer</button>
+      <button id="saveBtn" class="btn btn--ghost" type="button">Sauvegarder ce point</button>
+      <span id="saveMsg" class="msg msg--inline" role="status" aria-live="polite"></span>
     </div>
   </section>
 
   <!-- Résumé -->
-  <section id="summary" class="card summary hidden"></section>
+  <section id="summary" class="metrics hidden" aria-label="Résumé du calcul"></section>
 
-  <!-- Table détaillée -->
-  <section id="tableWrap" class="card hidden">
-    <div class="table-head">
-      <h2>Détail par niveau</h2>
-      <input id="filter" type="text" placeholder="filtrer (niveau ou ressource)…">
+  <!-- Détail par niveau -->
+  <section id="tableWrap" class="panel hidden" aria-labelledby="s-detail">
+    <div class="panel__head panel__head--split">
+      <h2 id="s-detail" class="panel__title">Détail par niveau</h2>
+      <div class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        <input id="filter" type="search" inputmode="search" placeholder="filtrer (niveau ou ressource)">
+      </div>
     </div>
     <div class="table-scroll">
-      <table id="planTable">
+      <table id="planTable" class="data-table">
         <thead>
           <tr>
-            <th>Niveau</th><th>Ressource</th><th>XP/node</th><th>XP requis</th><th>À récolter</th>
+            <th class="col-lvl">Niveau</th>
+            <th>Ressource</th>
+            <th class="num">XP / node</th>
+            <th class="num">XP requis</th>
+            <th class="num">À récolter</th>
           </tr>
         </thead>
         <tbody></tbody>
@@ -96,18 +144,29 @@
     </div>
   </section>
 
-  <!-- Historique sauvegardé -->
-  <section id="historyWrap" class="card hidden">
-    <h2>Historique sauvegardé (SQLite)</h2>
+  <!-- Historique -->
+  <section id="historyWrap" class="panel hidden" aria-labelledby="s-history">
+    <div class="panel__head">
+      <h2 id="s-history" class="panel__title">Historique sauvegardé</h2>
+      <span class="badge">SQLite</span>
+    </div>
     <div class="table-scroll">
-      <table id="histTable">
-        <thead><tr><th>Date</th><th>Pseudo</th><th>Perso</th><th>Profession</th><th>Niveau</th><th>%</th><th></th></tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
-  </div>
+      <table id="histTable" class="data-table data-table--compact">
+        <thead>
+          <tr><th>Date</th><th>Pseudo</th><th>Perso</th><th>Profession</th><th class="num">Niv</th><th class="num">%</th><th aria-label="Supprimer"></th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
 
-  <script type="module" src="app.js"></script>
+  <footer class="foot">
+    <span>Données via l'API officielle Wynncraft.</span>
+    <span>Estimations indicatives, hors event XP.</span>
+  </footer>
+
+</main>
+
+<script type="module" src="app.js"></script>
 </body>
 </html>
