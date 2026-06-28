@@ -148,4 +148,6 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`\n  ⛏️  Calc
+  console.log(`\n  ⛏️  Calculateur de professions Wynncraft`);
+  console.log(`  ➜  http://localhost:${PORT}\n`);
+});
