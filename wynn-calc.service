@@ -1,0 +1,16 @@
+[Unit]
+Description=Calculateur Professions Wynncraft
+After=network.target
+
+[Service]
+Type=simple
+# Adapte WorkingDirectory et User a ton VPS :
+WorkingDirectory=/opt/wynn-calc
+ExecStart=/usr/bin/node --experimental-sqlite server.js
+Restart=on-failure
+RestartSec=5
+Environment=PORT=3000
+User=www-data
+
+[Install]
+WantedBy=multi-user.target

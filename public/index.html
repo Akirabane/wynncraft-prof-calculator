@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculateur de Professions — Wynncraft</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>⛏️ Calculateur de Professions <span>Wynncraft</span></h1>
+    <p class="sub">Combien de ressources récolter pour chaque niveau — bûcheronnage, minage, agriculture, pêche.</p>
+  </header>
+
+  <!-- Bloc joueur / API -->
+  <section class="card">
+    <div class="row">
+      <div class="field grow">
+        <label>Pseudo Wynncraft</label>
+        <input id="username" type="text" placeholder="ex: ton_pseudo" autocomplete="off">
+      </div>
+      <button id="fetchBtn" class="primary">Charger via l'API</button>
+    </div>
+    <div id="charPick" class="hidden">
+      <label>Personnage</label>
+      <select id="charSelect"></select>
+    </div>
+    <p id="apiMsg" class="msg"></p>
+  </section>
+
+  <!-- Vue d'ensemble des 4 métiers de récolte du personnage -->
+  <section id="overview" class="card hidden">
+    <h2 id="overviewTitle">Métiers de récolte</h2>
+    <div id="overviewGrid" class="prof-grid"></div>
+    <p class="msg" style="margin-top:10px">Clique sur un métier pour le calculer en détail ci-dessous.</p>
+  </section>
+
+  <!-- Paramètres de calcul -->
+  <section class="card">
+    <div class="grid">
+      <div class="field">
+        <label>Profession</label>
+        <select id="profSelect"></select>
+      </div>
+      <div class="field">
+        <label>Niveau actuel</label>
+        <input id="curLevel" type="number" min="1" max="132" value="1">
+      </div>
+      <div class="field">
+        <label>% du niveau déjà fait</label>
+        <input id="curPct" type="number" min="0" max="99.9" step="0.1" value="0">
+      </div>
+      <div class="field">
+        <label>Niveau cible</label>
+        <input id="targetLevel" type="number" min="2" max="132" value="132">
+      </div>
+      <div class="field">
+        <label>Bonus XP total (%) <span class="hint" title="Cumul armure + items + passifs">ⓘ</span></label>
+        <input id="bonus" type="number" min="0" max="500" step="1" value="0">
+      </div>
+      <div class="field">
+        <label>Estimation XP/node</label>
+        <select id="mode">
+          <option value="avg">Moyenne (recommandé)</option>
+          <option value="min">Pessimiste (min)</option>
+          <option value="max">Optimiste (max)</option>
+        </select>
+      </div>
+    </div>
+    <div class="row actions">
+      <button id="calcBtn" class="primary">Calculer</button>
+      <button id="saveBtn" class="ghost">💾 Sauvegarder ce point</button>
+      <span id="saveMsg" class="msg inline"></span>
+    </div>
+  </section>
+
+  <!-- Résumé -->
+  <section id="summary" class="card summary hidden"></section>
+
+  <!-- Table détaillée -->
+  <section id="tableWrap" class="card hidden">
+    <div class="table-head">
+      <h2>Détail par niveau</h2>
+      <input id="filter" type="text" placeholder="filtrer (niveau ou ressource)…">
+    </div>
+    <div class="table-scroll">
+      <table id="planTable">
+        <thead>
+          <tr>
+            <th>Niveau</th><th>Ressource</th><th>XP/node</th><th>XP requis</th><th>À récolter</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Historique sauvegardé -->
+  <section id="historyWrap" class="card hidden">
+    <h2>Historique sauvegardé (SQLite)</h2>
+    <div class="table-scroll">
+      <table id="histTable">
+        <thead><tr><th>Date</th><th>Pseudo</th><th>Perso</th><th>Profession</th><th>Niveau</th><th>%</th><th></th></tr></thead>
+        <tbo

@@ -1,0 +1,1117 @@
+{
+ "xpTable": [
+  {
+   "level": 1,
+   "xpToNext": 30
+  },
+  {
+   "level": 2,
+   "xpToNext": 38
+  },
+  {
+   "level": 3,
+   "xpToNext": 48
+  },
+  {
+   "level": 4,
+   "xpToNext": 58
+  },
+  {
+   "level": 5,
+   "xpToNext": 69
+  },
+  {
+   "level": 6,
+   "xpToNext": 82
+  },
+  {
+   "level": 7,
+   "xpToNext": 96
+  },
+  {
+   "level": 8,
+   "xpToNext": 111
+  },
+  {
+   "level": 9,
+   "xpToNext": 128
+  },
+  {
+   "level": 10,
+   "xpToNext": 148
+  },
+  {
+   "level": 11,
+   "xpToNext": 169
+  },
+  {
+   "level": 12,
+   "xpToNext": 192
+  },
+  {
+   "level": 13,
+   "xpToNext": 219
+  },
+  {
+   "level": 14,
+   "xpToNext": 248
+  },
+  {
+   "level": 15,
+   "xpToNext": 280
+  },
+  {
+   "level": 16,
+   "xpToNext": 316
+  },
+  {
+   "level": 17,
+   "xpToNext": 355
+  },
+  {
+   "level": 18,
+   "xpToNext": 399
+  },
+  {
+   "level": 19,
+   "xpToNext": 448
+  },
+  {
+   "level": 20,
+   "xpToNext": 503
+  },
+  {
+   "level": 21,
+   "xpToNext": 563
+  },
+  {
+   "level": 22,
+   "xpToNext": 630
+  },
+  {
+   "level": 23,
+   "xpToNext": 704
+  },
+  {
+   "level": 24,
+   "xpToNext": 787
+  },
+  {
+   "level": 25,
+   "xpToNext": 878
+  },
+  {
+   "level": 26,
+   "xpToNext": 980
+  },
+  {
+   "level": 27,
+   "xpToNext": 1092
+  },
+  {
+   "level": 28,
+   "xpToNext": 1218
+  },
+  {
+   "level": 29,
+   "xpToNext": 1356
+  },
+  {
+   "level": 30,
+   "xpToNext": 1511
+  },
+  {
+   "level": 31,
+   "xpToNext": 1682
+  },
+  {
+   "level": 32,
+   "xpToNext": 1872
+  },
+  {
+   "level": 33,
+   "xpToNext": 2083
+  },
+  {
+   "level": 34,
+   "xpToNext": 2317
+  },
+  {
+   "level": 35,
+   "xpToNext": 2577
+  },
+  {
+   "level": 36,
+   "xpToNext": 2865
+  },
+  {
+   "level": 37,
+   "xpToNext": 3185
+  },
+  {
+   "level": 38,
+   "xpToNext": 3541
+  },
+  {
+   "level": 39,
+   "xpToNext": 3935
+  },
+  {
+   "level": 40,
+   "xpToNext": 4373
+  },
+  {
+   "level": 41,
+   "xpToNext": 4859
+  },
+  {
+   "level": 42,
+   "xpToNext": 5399
+  },
+  {
+   "level": 43,
+   "xpToNext": 5998
+  },
+  {
+   "level": 44,
+   "xpToNext": 6662
+  },
+  {
+   "level": 45,
+   "xpToNext": 7400
+  },
+  {
+   "level": 46,
+   "xpToNext": 8219
+  },
+  {
+   "level": 47,
+   "xpToNext": 9128
+  },
+  {
+   "level": 48,
+   "xpToNext": 10137
+  },
+  {
+   "level": 49,
+   "xpToNext": 11257
+  },
+  {
+   "level": 50,
+   "xpToNext": 12501
+  },
+  {
+   "level": 51,
+   "xpToNext": 13881
+  },
+  {
+   "level": 52,
+   "xpToNext": 15413
+  },
+  {
+   "level": 53,
+   "xpToNext": 17113
+  },
+  {
+   "level": 54,
+   "xpToNext": 19001
+  },
+  {
+   "level": 55,
+   "xpToNext": 21096
+  },
+  {
+   "level": 56,
+   "xpToNext": 23421
+  },
+  {
+   "level": 57,
+   "xpToNext": 26002
+  },
+  {
+   "level": 58,
+   "xpToNext": 28868
+  },
+  {
+   "level": 59,
+   "xpToNext": 32048
+  },
+  {
+   "level": 60,
+   "xpToNext": 35578
+  },
+  {
+   "level": 61,
+   "xpToNext": 39497
+  },
+  {
+   "level": 62,
+   "xpToNext": 43847
+  },
+  {
+   "level": 63,
+   "xpToNext": 48675
+  },
+  {
+   "level": 64,
+   "xpToNext": 54034
+  },
+  {
+   "level": 65,
+   "xpToNext": 59983
+  },
+  {
+   "level": 66,
+   "xpToNext": 66586
+  },
+  {
+   "level": 67,
+   "xpToNext": 73915
+  },
+  {
+   "level": 68,
+   "xpToNext": 82051
+  },
+  {
+   "level": 69,
+   "xpToNext": 91082
+  },
+  {
+   "level": 70,
+   "xpToNext": 101106
+  },
+  {
+   "level": 71,
+   "xpToNext": 112232
+  },
+  {
+   "level": 72,
+   "xpToNext": 124583
+  },
+  {
+   "level": 73,
+   "xpToNext": 138292
+  },
+  {
+   "level": 74,
+   "xpToNext": 153509
+  },
+  {
+   "level": 75,
+   "xpToNext": 170400
+  },
+  {
+   "level": 76,
+   "xpToNext": 189149
+  },
+  {
+   "level": 77,
+   "xpToNext": 209961
+  },
+  {
+   "level": 78,
+   "xpToNext": 233061
+  },
+  {
+   "level": 79,
+   "xpToNext": 258703
+  },
+  {
+   "level": 80,
+   "xpToNext": 287165
+  },
+  {
+   "level": 81,
+   "xpToNext": 318759
+  },
+  {
+   "level": 82,
+   "xpToNext": 353827
+  },
+  {
+   "level": 83,
+   "xpToNext": 392753
+  },
+  {
+   "level": 84,
+   "xpToNext": 435961
+  },
+  {
+   "level": 85,
+   "xpToNext": 483921
+  },
+  {
+   "level": 86,
+   "xpToNext": 537158
+  },
+  {
+   "level": 87,
+   "xpToNext": 596250
+  },
+  {
+   "level": 88,
+   "xpToNext": 661843
+  },
+  {
+   "level": 89,
+   "xpToNext": 734650
+  },
+  {
+   "level": 90,
+   "xpToNext": 815467
+  },
+  {
+   "level": 91,
+   "xpToNext": 905173
+  },
+  {
+   "level": 92,
+   "xpToNext": 1004747
+  },
+  {
+   "level": 93,
+   "xpToNext": 1115274
+  },
+  {
+   "level": 94,
+   "xpToNext": 1237960
+  },
+  {
+   "level": 95,
+   "xpToNext": 1374140
+  },
+  {
+   "level": 96,
+   "xpToNext": 1525301
+  },
+  {
+   "level": 97,
+   "xpToNext": 1693089
+  },
+  {
+   "level": 98,
+   "xpToNext": 1879333
+  },
+  {
+   "level": 99,
+   "xpToNext": 2086065
+  },
+  {
+   "level": 100,
+   "xpToNext": 2315537
+  },
+  {
+   "level": 101,
+   "xpToNext": 2570251
+  },
+  {
+   "level": 102,
+   "xpToNext": 2852984
+  },
+  {
+   "level": 103,
+   "xpToNext": 3166817
+  },
+  {
+   "level": 104,
+   "xpToNext": 3515172
+  },
+  {
+   "level": 105,
+   "xpToNext": 3901846
+  },
+  {
+   "level": 106,
+   "xpToNext": 4331054
+  },
+  {
+   "level": 107,
+   "xpToNext": 4807475
+  },
+  {
+   "level": 108,
+   "xpToNext": 5336302
+  },
+  {
+   "level": 109,
+   "xpToNext": 5923301
+  },
+  {
+   "level": 110,
+   "xpToNext": 6574869
+  },
+  {
+   "level": 111,
+   "xpToNext": 7298109
+  },
+  {
+   "level": 112,
+   "xpToNext": 8100906
+  },
+  {
+   "level": 113,
+   "xpToNext": 8992011
+  },
+  {
+   "level": 114,
+   "xpToNext": 9981137
+  },
+  {
+   "level": 115,
+   "xpToNext": 11079067
+  },
+  {
+   "level": 116,
+   "xpToNext": 12297770
+  },
+  {
+   "level": 117,
+   "xpToNext": 13650530
+  },
+  {
+   "level": 118,
+   "xpToNext": 15152093
+  },
+  {
+   "level": 119,
+   "xpToNext": 16818828
+  },
+  {
+   "level": 120,
+   "xpToNext": 18668904
+  },
+  {
+   "level": 121,
+   "xpToNext": 20722489
+  },
+  {
+   "level": 122,
+   "xpToNext": 23001967
+  },
+  {
+   "level": 123,
+   "xpToNext": 25532189
+  },
+  {
+   "level": 124,
+   "xpToNext": 28340734
+  },
+  {
+   "level": 125,
+   "xpToNext": 31458220
+  },
+  {
+   "level": 126,
+   "xpToNext": 34918630
+  },
+  {
+   "level": 127,
+   "xpToNext": 38759684
+  },
+  {
+   "level": 128,
+   "xpToNext": 43023254
+  },
+  {
+   "level": 129,
+   "xpToNext": 47755817
+  },
+  {
+   "level": 130,
+   "xpToNext": 53008961
+  },
+  {
+   "level": 131,
+   "xpToNext": 58839952
+  },
+  {
+   "level": 132,
+   "xpToNext": null
+  }
+ ],
+ "professions": {
+  "woodcutting": {
+   "label": "Bûcheronnage",
+   "resourceWord": "arbres",
+   "resources": [
+    {
+     "nodeLevel": 1,
+     "name": "Oak",
+     "xp": {
+      "min": 12,
+      "max": 18,
+      "avg": 15
+     }
+    },
+    {
+     "nodeLevel": 10,
+     "name": "Birch",
+     "xp": {
+      "min": 29,
+      "max": 47,
+      "avg": 38
+     }
+    },
+    {
+     "nodeLevel": 20,
+     "name": "Willow",
+     "xp": {
+      "min": 60,
+      "max": 90,
+      "avg": 75
+     }
+    },
+    {
+     "nodeLevel": 30,
+     "name": "Acacia",
+     "xp": {
+      "min": 99,
+      "max": 148,
+      "avg": 124
+     }
+    },
+    {
+     "nodeLevel": 40,
+     "name": "Spruce",
+     "xp": {
+      "min": 146,
+      "max": 219,
+      "avg": 182
+     }
+    },
+    {
+     "nodeLevel": 50,
+     "name": "Jungle",
+     "xp": {
+      "min": 207,
+      "max": 346,
+      "avg": 276
+     }
+    },
+    {
+     "nodeLevel": 60,
+     "name": "Dark",
+     "xp": {
+      "min": 334,
+      "max": 507,
+      "avg": 420
+     }
+    },
+    {
+     "nodeLevel": 70,
+     "name": "Light",
+     "xp": {
+      "min": 503,
+      "max": 752,
+      "avg": 628
+     }
+    },
+    {
+     "nodeLevel": 80,
+     "name": "Pine",
+     "xp": {
+      "min": 737,
+      "max": 1093,
+      "avg": 915
+     }
+    },
+    {
+     "nodeLevel": 90,
+     "name": "Avo",
+     "xp": {
+      "min": 1093,
+      "max": 1630,
+      "avg": 1362
+     }
+    },
+    {
+     "nodeLevel": 100,
+     "name": "Sky",
+     "xp": {
+      "min": 1630,
+      "max": 2430,
+      "avg": 2030
+     }
+    },
+    {
+     "nodeLevel": 105,
+     "name": "Dernic",
+     "xp": {
+      "min": 2030,
+      "max": 3025,
+      "avg": 2528
+     }
+    },
+    {
+     "nodeLevel": 110,
+     "name": "Maple",
+     "xp": {
+      "min": 2430,
+      "max": 3620,
+      "avg": 3025
+     }
+    },
+    {
+     "nodeLevel": 115,
+     "name": "Redwood",
+     "xp": {
+      "min": 3620,
+      "max": 5400,
+      "avg": 4510
+     }
+    }
+   ]
+  },
+  "mining": {
+   "label": "Minage",
+   "resourceWord": "minerais",
+   "resources": [
+    {
+     "nodeLevel": 1,
+     "name": "Copper",
+     "xp": {
+      "min": 12,
+      "max": 18,
+      "avg": 15
+     }
+    },
+    {
+     "nodeLevel": 10,
+     "name": "Granite",
+     "xp": {
+      "min": 29,
+      "max": 47,
+      "avg": 38
+     }
+    },
+    {
+     "nodeLevel": 20,
+     "name": "Gold",
+     "xp": {
+      "min": 60,
+      "max": 90,
+      "avg": 75
+     }
+    },
+    {
+     "nodeLevel": 30,
+     "name": "Sandstone",
+     "xp": {
+      "min": 99,
+      "max": 148,
+      "avg": 124
+     }
+    },
+    {
+     "nodeLevel": 40,
+     "name": "Iron",
+     "xp": {
+      "min": 146,
+      "max": 219,
+      "avg": 182
+     }
+    },
+    {
+     "nodeLevel": 50,
+     "name": "Silver",
+     "xp": {
+      "min": 207,
+      "max": 346,
+      "avg": 276
+     }
+    },
+    {
+     "nodeLevel": 60,
+     "name": "Cobalt",
+     "xp": {
+      "min": 334,
+      "max": 507,
+      "avg": 420
+     }
+    },
+    {
+     "nodeLevel": 70,
+     "name": "Kanderstone",
+     "xp": {
+      "min": 503,
+      "max": 752,
+      "avg": 628
+     }
+    },
+    {
+     "nodeLevel": 80,
+     "name": "Diamond",
+     "xp": {
+      "min": 737,
+      "max": 1093,
+      "avg": 915
+     }
+    },
+    {
+     "nodeLevel": 90,
+     "name": "Molten",
+     "xp": {
+      "min": 1093,
+      "max": 1630,
+      "avg": 1362
+     }
+    },
+    {
+     "nodeLevel": 100,
+     "name": "Voidstone",
+     "xp": {
+      "min": 1630,
+      "max": 2430,
+      "avg": 2030
+     }
+    },
+    {
+     "nodeLevel": 105,
+     "name": "Dernic",
+     "xp": {
+      "min": 2030,
+      "max": 3025,
+      "avg": 2528
+     }
+    },
+    {
+     "nodeLevel": 110,
+     "name": "Karat",
+     "xp": {
+      "min": 2430,
+      "max": 3620,
+      "avg": 3025
+     }
+    },
+    {
+     "nodeLevel": 115,
+     "name": "Adamantite",
+     "xp": {
+      "min": 3620,
+      "max": 5400,
+      "avg": 4510
+     }
+    }
+   ]
+  },
+  "farming": {
+   "label": "Agriculture",
+   "resourceWord": "récoltes",
+   "resources": [
+    {
+     "nodeLevel": 1,
+     "name": "Wheat",
+     "xp": {
+      "min": 12,
+      "max": 18,
+      "avg": 15
+     }
+    },
+    {
+     "nodeLevel": 10,
+     "name": "Barley",
+     "xp": {
+      "min": 29,
+      "max": 47,
+      "avg": 38
+     }
+    },
+    {
+     "nodeLevel": 20,
+     "name": "Oat",
+     "xp": {
+      "min": 60,
+      "max": 90,
+      "avg": 75
+     }
+    },
+    {
+     "nodeLevel": 30,
+     "name": "Malt",
+     "xp": {
+      "min": 99,
+      "max": 148,
+      "avg": 124
+     }
+    },
+    {
+     "nodeLevel": 40,
+     "name": "Hops",
+     "xp": {
+      "min": 146,
+      "max": 219,
+      "avg": 182
+     }
+    },
+    {
+     "nodeLevel": 50,
+     "name": "Rye",
+     "xp": {
+      "min": 207,
+      "max": 346,
+      "avg": 276
+     }
+    },
+    {
+     "nodeLevel": 60,
+     "name": "Millet",
+     "xp": {
+      "min": 334,
+      "max": 507,
+      "avg": 420
+     }
+    },
+    {
+     "nodeLevel": 70,
+     "name": "Decay Root",
+     "xp": {
+      "min": 503,
+      "max": 752,
+      "avg": 628
+     }
+    },
+    {
+     "nodeLevel": 80,
+     "name": "Rice",
+     "xp": {
+      "min": 737,
+      "max": 1093,
+      "avg": 915
+     }
+    },
+    {
+     "nodeLevel": 90,
+     "name": "Sorghum",
+     "xp": {
+      "min": 1093,
+      "max": 1630,
+      "avg": 1362
+     }
+    },
+    {
+     "nodeLevel": 100,
+     "name": "Hemp",
+     "xp": {
+      "min": 1630,
+      "max": 2430,
+      "avg": 2030
+     }
+    },
+    {
+     "nodeLevel": 105,
+     "name": "Dernic",
+     "xp": {
+      "min": 2030,
+      "max": 3025,
+      "avg": 2528
+     }
+    },
+    {
+     "nodeLevel": 110,
+     "name": "Spelt",
+     "xp": {
+      "min": 2430,
+      "max": 3620,
+      "avg": 3025
+     }
+    },
+    {
+     "nodeLevel": 115,
+     "name": "Bamboo",
+     "xp": {
+      "min": 3620,
+      "max": 5400,
+      "avg": 4510
+     }
+    }
+   ]
+  },
+  "fishing": {
+   "label": "Pêche",
+   "resourceWord": "poissons",
+   "resources": [
+    {
+     "nodeLevel": 1,
+     "name": "Gudgeon",
+     "xp": {
+      "min": 12,
+      "max": 18,
+      "avg": 15
+     }
+    },
+    {
+     "nodeLevel": 10,
+     "name": "Trout",
+     "xp": {
+      "min": 29,
+      "max": 47,
+      "avg": 38
+     }
+    },
+    {
+     "nodeLevel": 20,
+     "name": "Salmon",
+     "xp": {
+      "min": 60,
+      "max": 90,
+      "avg": 75
+     }
+    },
+    {
+     "nodeLevel": 30,
+     "name": "Carp",
+     "xp": {
+      "min": 99,
+      "max": 148,
+      "avg": 124
+     }
+    },
+    {
+     "nodeLevel": 40,
+     "name": "Icefish",
+     "xp": {
+      "min": 146,
+      "max": 219,
+      "avg": 182
+     }
+    },
+    {
+     "nodeLevel": 50,
+     "name": "Piranha",
+     "xp": {
+      "min": 207,
+      "max": 346,
+      "avg": 276
+     }
+    },
+    {
+     "nodeLevel": 60,
+     "name": "Koi",
+     "xp": {
+      "min": 334,
+      "max": 507,
+      "avg": 420
+     }
+    },
+    {
+     "nodeLevel": 70,
+     "name": "Gylia Fish",
+     "xp": {
+      "min": 503,
+      "max": 752,
+      "avg": 628
+     }
+    },
+    {
+     "nodeLevel": 80,
+     "name": "Bass",
+     "xp": {
+      "min": 737,
+      "max": 1093,
+      "avg": 915
+     }
+    },
+    {
+     "nodeLevel": 90,
+     "name": "Molten Eel",
+     "xp": {
+      "min": 1093,
+      "max": 1630,
+      "avg": 1362
+     }
+    },
+    {
+     "nodeLevel": 100,
+     "name": "Starfish",
+     "xp": {
+      "min": 1630,
+      "max": 2430,
+      "avg": 2030
+     }
+    },
+    {
+     "nodeLevel": 105,
+     "name": "Dernic",
+     "xp": {
+      "min": 2030,
+      "max": 3025,
+      "avg": 2528
+     }
+    },
+    {
+     "nodeLevel": 110,
+     "name": "Pike",
+     "xp": {
+      "min": 2430,
+      "max": 3620,
+      "avg": 3025
+     }
+    },
+    {
+     "nodeLevel": 115,
+     "name": "Anglerfish",
+     "xp": {
+      "min": 3620,
+      "max": 5400,
+      "avg": 4510
+     }
+    }
+   ]
+  }
+ },
+ "nodeXpTiers": {
+  "1": [
+   12,
+   18
+  ],
+  "10": [
+   29,
+   47
+  ],
+  "20": [
+   60,
+   90
+  ],
+  "30": [
+   99,
+   148
+  ],
+  "40": [
+   146,
+   219
+  ],
+  "50": [
+   207,
+   346
+  ],
+  "60": [
+   334,
+   507
+  ],
+  "70": [
+   503,
+   752
+  ],
+  "80": [
+   737,
+   1093
+  ],
+  "90": [
+   1093,
+   1630
+  ],
+  "100": [
+   1630,
+   2430
+  ],
+  "110": [
+   2430,
+   3620
+  ],
+  "115": [
+   3620,
+   5400
+  ]
+ },
+ "notes": "XP par node = valeurs de base sans bonus (source forum Wynncraft). Tiers 90-115 extrapolés. Table XP/niveau issue du XLSX joueur (niv 1-132)."
+}

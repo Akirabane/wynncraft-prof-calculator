@@ -1,0 +1,9 @@
+{
+  "name": "wynncraft-prof-calculator",
+  "version": "1.0.0",
+  "description": "Calculateur XP par profession (recolte) pour Wynncraft, avec sauvegarde SQLite locale.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=22.5.0" }
+}
